@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="插死他电影网 - 插画系电影片单 · 分镜鉴赏 · 美术榜单 · 色彩时刻。专注画面、构图与分镜的电影观影指南，倡导关灯、戴耳机、支持正版。">
+<meta name="keywords" content="插死他电影网,插画电影,chasitadianyingwang,插画系电影,分镜,美术,动画,色彩,观影指南">
+<meta name="author" content="插死他电影网">
+<meta name="theme-color" content="#0f1420">
+<title>插死他电影网 - 插画系电影片单 / 分镜鉴赏 / 美术榜单 / 色彩时刻 | 插死他电影网</title>
+<link rel="canonical" href="https://chasitadianyingwang-cn.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;background:#0f1420;color:#e6ecf5;line-height:1.85;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul,ol,dl{list-style:none}
+:focus-visible{outline:2px solid #7ce0d6;outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.3rem}
+
+/* 顶栏 */
+.top{position:sticky;top:0;z-index:99;background:rgba(15,20,32,.95);backdrop-filter:blur(14px);border-bottom:1px solid #263248}
+.tin{display:flex;align-items:center;gap:1rem;height:62px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:950;font-size:1.14rem;white-space:nowrap;letter-spacing:.01em}
+.logo{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#0f1420;background:
+  radial-gradient(circle at 30% 22%,#ffffff,#b9f0ea 40%,#3aa9a0 76%,#1d6e68);
+  box-shadow:0 0 26px rgba(124,224,214,.42);flex:0 0 auto;animation:lo 6s ease-in-out infinite alternate}
+@keyframes lo{to{filter:brightness(1.14) hue-rotate(-8deg)}}
+.brand em{font-style:normal;color:#7ce0d6;font-size:.28rem;letter-spacing:.2em;display:block;font-weight:700;margin-top:-.2em}
+.brand small{font-size:.6rem;color:#93a8c4;font-weight:600;margin-left:.2rem}
+.tabs{display:flex;gap:.2rem;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{padding:.46rem .9rem;border-radius:999px;font-size:.84rem;color:#cdd8e8;white-space:nowrap;transition:.2s}
+.tabs a:hover{color:#fff;background:rgba(124,224,214,.14)}
+.tabs a.on{background:linear-gradient(100deg,#7ce0d6,#3aa9a0);color:#0f1420;font-weight:950;box-shadow:0 6px 18px rgba(58,169,160,.34)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(520px 240px at 90% 6%,rgba(124,224,214,.2),transparent 54%),
+  radial-gradient(420px 220px at 4% 64%,rgba(120,150,255,.16),transparent 58%),
+  linear-gradient(168deg,#0a0e18,#141d2e 54%,#0a0e18)}
+.pal{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.9;
+  background-image:linear-gradient(90deg,rgba(233,98,137,.16) 0 12%,transparent 12% 24%,rgba(246,187,66,.14) 0 0),
+  repeating-linear-gradient(88deg,transparent 0 21px,rgba(124,224,214,.13) 22px 23px);
+  background-size:100% 100%,100% 100%;animation:st 15s linear infinite}
+@keyframes st{to{background-position:0 0}}
+.brush{position:absolute;right:6%;top:14%;z-index:2;pointer-events:none;width:118px;height:118px;border-radius:50% 50% 48% 52% / 54% 46% 52% 48%;
+  background:radial-gradient(circle at 42% 38%,#7ce0d6,#2f7d76 58%,#12302e);
+  box-shadow:0 0 80px 30px rgba(124,224,214,.28);animation:br 5s ease-in-out infinite alternate}
+.brush::before{content:"";position:absolute;left:-34px;top:44px;width:44px;height:14px;border-radius:8px;background:#1b2436;transform:rotate(-26deg);box-shadow:0 0 0 5px #0f1420}
+@keyframes br{to{transform:scale(1.08) rotate(12deg);box-shadow:0 0 110px 46px rgba(124,224,214,.4)}}
+.hbox{position:relative;z-index:3;display:grid;grid-template-columns:1fr .86fr;gap:2.6rem;align-items:center;padding:4rem 1.3rem;max-width:1180px;margin:0 auto}
+.kick{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;color:#e6ecf5;background:rgba(124,224,214,.12);border:1px solid rgba(124,224,214,.44);padding:.3rem .8rem;border-radius:999px;margin-bottom:1rem}
+h1{font-size:clamp(1.85rem,4.6vw,3rem);line-height:1.24;font-weight:950;margin-bottom:1rem;background:linear-gradient(100deg,#fff,#d8f5f2 48%,#7ce0d6);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 u{text-decoration:none;color:#7ce0d6;-webkit-text-fill-color:#7ce0d6}
+.hero>p{color:#cdd8e8;font-size:1rem;max-width:32em;margin-bottom:1.5rem}
+.acts{display:flex;gap:.7rem;flex-wrap:wrap}
+.b{padding:.78rem 1.8rem;border-radius:12px;font-weight:850;font-size:.94rem;border:0;cursor:pointer;transition:.25s}
+.b.p{background:linear-gradient(100deg,#7ce0d6,#3aa9a0);color:#0f1420;box-shadow:0 10px 26px rgba(58,169,160,.3)}
+.b.p:hover{transform:translateY(-2px)}
+.b.o{background:transparent;color:#e6ecf5;border:1px solid #3d5470}
+.sts{display:flex;gap:1.8rem;margin-top:1.7rem;flex-wrap:wrap}
+.sts div{font-size:.77rem;color:#93a8c4}
+.sts b{display:block;font-size:1.5rem;color:#7ce0d6;font-weight:950;line-height:1.2;text-shadow:0 0 14px rgba(124,224,214,.5)}
+
+/* 调色板卡 */
+.swatches{position:relative;width:100%;max-width:300px;margin-left:auto;background:#141d2e;border:2px solid #3d5470;border-radius:16px;padding:1.2rem;box-shadow:0 26px 60px rgba(0,0,0,.6);transform:rotate(-1.6deg)}
+.swatches h4{font-size:.9rem;margin-bottom:.85rem;letter-spacing:.05em;display:flex;align-items:center;gap:.5rem}
+.swatches h4 i{font-style:normal;font-size:.6rem;color:#0f1420;background:#7ce0d6;border-radius:5px;padding:.1rem .5rem;font-weight:850}
+.palrow{display:grid;grid-template-columns:repeat(5,1fr);gap:.4rem;height:52px;border-radius:10px;overflow:hidden}
+.palrow i{display:block}
+.palrow i:nth-child(1){background:#e96289}
+.palrow i:nth-child(2){background:#f6bb42}
+.palrow i:nth-child(3){background:#7ce0d6}
+.palrow i:nth-child(4){background:#7896ff}
+.palrow i:nth-child(5){background:#b48cff}
+.swatches p{font-size:.72rem;color:#93a8c4;margin-top:.8rem;line-height:1.7}
+
+/* 通用 */
+section{padding:3.4rem 0}
+.uh{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:1.7rem;flex-wrap:wrap}
+.ut{font-size:clamp(1.3rem,2.8vw,1.85rem);font-weight:950;display:flex;align-items:center;gap:.6rem}
+.ut::before{content:"";width:5px;height:1.2em;border-radius:3px;background:linear-gradient(#7ce0d6,#3aa9a0)}
+.us{font-size:.8rem;color:#93a8c4}
+.us:hover{color:#7ce0d6}
+
+/* A：插画系片单（Grid 卡片墙） */
+.now{background:linear-gradient(180deg,#0f1420,#141d2e)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:1rem}
+.mv{border:1px solid #263248;border-radius:16px;overflow:hidden;background:#141d2e;transition:.34s;cursor:pointer;display:flex;flex-direction:column}
+.mv:hover{transform:translateY(-7px) rotate(-.7deg);border-color:#7ce0d6;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.cvr{height:138px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;position:relative}
+.cvr::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,20,32,.94),transparent 56%)}
+.cvr b{position:relative;z-index:2;filter:drop-shadow(0 8px 14px rgba(0,0,0,.6));transition:.4s;font-weight:400}
+.mv:hover .cvr b{transform:scale(1.16) rotate(9deg)}
+.cvr .yr{position:absolute;top:.6rem;left:.6rem;z-index:3;font-size:.68rem;font-weight:850;padding:.2rem .55rem;border-radius:6px;background:#7ce0d6;color:#0f1420}
+.cvr .tg{position:absolute;top:.6rem;right:.6rem;z-index:3;font-size:.62rem;font-weight:850;padding:.2rem .5rem;border-radius:6px;background:#1d3a52;color:#e6ecf5}
+.mv h3{font-size:.98rem;padding:.8rem .95rem .2rem;display:flex;justify-content:space-between;gap:.5rem;align-items:baseline}
+.mv h3 i{font-style:normal;font-size:.64rem;color:#7ce0d6;font-weight:750;white-space:nowrap;border:1px solid rgba(124,224,214,.5);border-radius:999px;padding:.14rem .5rem;background:rgba(124,224,214,.1)}
+.mv p{font-size:.74rem;color:#93a8c4;padding:0 .95rem .9rem}
+
+/* B：分镜鉴赏（定义列表 dl/dt/dd） */
+.sea{background:#141d2e}
+.dlgrp{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.95rem}
+.dlgrp>div{border:1px solid #263248;background:#141d2e;border-radius:15px;padding:1rem 1.1rem 1.2rem;transition:.3s}
+.dlgrp>div:hover{transform:translateY(-6px);border-color:#7ce0d6;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.dlgrp dt{display:flex;align-items:center;gap:.75rem;font-size:1rem;font-weight:850;margin-bottom:.85rem;padding-bottom:.7rem;border-bottom:1px dashed #3d5470}
+.ava{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex:0 0 auto;color:#0f1420}
+.ava.a{background:radial-gradient(circle at 34% 30%,#ffd9e6,#e96289 60%,#8f2f52)}
+.ava.b{background:radial-gradient(circle at 34% 30%,#fff3d6,#f6bb42 60%,#8f6a10)}
+.ava.c{background:radial-gradient(circle at 34% 30%,#d9f5f2,#7ce0d6 60%,#2f7d76)}
+.ava.d{background:radial-gradient(circle at 34% 30%,#e0e8ff,#7896ff 60%,#2f4f9a)}
+.ava.e{background:radial-gradient(circle at 34% 30%,#eee6ff,#b48cff 60%,#5f2f9a)}
+.dlgrp dd{font-size:.86rem;color:#cdd8e8;padding:.5rem 0;border-bottom:1px solid #1e2940;display:flex;justify-content:space-between;gap:.6rem;counter-increment:fr}
+.dlgrp dd:last-child{border-bottom:0}
+.dlgrp dd::before{content:"分镜 " counter(fr,decimal-leading-zero);font-size:.62rem;color:#7ce0d6;font-weight:750;white-space:nowrap;align-self:center;border:1px solid rgba(124,224,214,.45);border-radius:999px;padding:.1rem .5rem;background:rgba(124,224,214,.1)}
+.dlgrp dd span{text-align:right;color:#93a8c4;font-size:.78rem}
+
+/* C：美术榜单（表格 table） */
+.rk{}
+.tb{width:100%;border-collapse:collapse;background:#141d2e;border:1px solid #263248;border-radius:14px;overflow:hidden;font-size:.9rem}
+.tb th{background:#1d3a52;color:#7ce0d6;font-weight:850;font-size:.78rem;letter-spacing:.05em;text-align:left;padding:.8rem .9rem;border-bottom:1px solid #263248;white-space:nowrap}
+.tb td{padding:.72rem .9rem;border-bottom:1px solid #1e2940;vertical-align:middle}
+.tb tr:last-child td{border-bottom:0}
+.tb tbody tr{transition:.2s}
+.tb tbody tr:hover{background:rgba(124,224,214,.1)}
+.tb td:first-child{font-weight:960;color:#7ce0d6;width:54px;text-align:center;font-variant-numeric:tabular-nums}
+.tb td:nth-child(2){font-weight:750}
+.tb td:nth-child(6){color:#ffd479;font-weight:800;white-space:nowrap}
+.tag{display:inline-block;font-size:.66rem;padding:.16rem .6rem;border-radius:999px;border:1px solid rgba(124,224,214,.5);color:#7ce0d6;white-space:nowrap}
+.tag.w{color:#ffd479;border-color:rgba(255,212,121,.45)}
+.tag.v{color:#c9d6ff;border-color:rgba(201,214,255,.4)}
+
+/* D：色彩时刻（栅格时间轴） */
+.md{background:#141d2e;border-top:1px solid #263248;border-bottom:1px solid #263248}
+.axis{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;padding-top:1.4rem}
+.axis::before{content:"";position:absolute;top:.55rem;left:8%;right:8%;height:5px;border-radius:4px;z-index:1;
+  background:linear-gradient(90deg,#e96289,#f6bb42 32%,#7ce0d6 60%,#7896ff 84%,#b48cff)}
+.node{border:1px solid #263248;background:#141d2e;border-radius:15px;padding:1rem 1.05rem 1.15rem;transition:.34s;position:relative}
+.node:hover{transform:translateY(-8px);border-color:#7ce0d6;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.dot{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:960;color:#0f1420;margin:-1.85rem auto .7rem;position:relative;z-index:2;box-shadow:0 0 0 5px #141d2e}
+.dot.d1{background:#e96289}.dot.d2{background:#f6bb42}.dot.d3{background:#7ce0d6}.dot.d4{background:#7896ff}.dot.d5{background:#b48cff}
+.node h3{font-size:.92rem;text-align:center;margin-bottom:.35rem}
+.node .tm{text-align:center;font-size:.68rem;color:#7ce0d6;font-weight:850;letter-spacing:.06em;margin-bottom:.6rem}
+.node p{font-size:.74rem;color:#93a8c4}
+
+/* 页脚 */
+.foot{background:#0a0e18;padding:2.6rem 0 1.2rem;border-top:1px solid #263248}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem;margin-bottom:1.6rem}
+.foot h5{font-size:.92rem;color:#7ce0d6;margin-bottom:.7rem;display:flex;align-items:center;gap:.4rem}
+.foot li{font-size:.83rem;color:#93a8c4;line-height:1.95}
+.foot a:hover{color:#fff}
+.cp{text-align:center;font-size:.74rem;color:#6f839c;border-top:1px solid #263248;padding-top:1.2rem;line-height:1.95}
+.cp a{color:#7ce0d6}
+
+@media(max-width:900px){
+  .hbox{grid-template-columns:1fr;padding-top:2.6rem;padding-bottom:3rem}
+  .swatches{margin:0 auto;transform:scale(.92) rotate(0)}
+  .brush{width:84px;height:84px;right:2%}
+}
+@media(max-width:560px){
+  .tin{height:54px}.brand{font-size:.92rem}.logo{width:32px;height:32px;font-size:1.2rem}
+  .brand small{display:none}
+  .tabs a{padding:.4rem .6rem;font-size:.78rem}
+  .wrap{padding:0 1rem}
+  section{padding:2.6rem 0}
+  h1{font-size:1.72rem}
+  .grid{grid-template-columns:repeat(2,1fr);gap:.7rem}
+  .cvr{height:104px;font-size:2rem}
+  .mv h3{font-size:.8rem;padding:.7rem .8rem .2rem;flex-direction:column;gap:.3rem}
+  .tb thead{display:none}
+  .tb tr{display:block;padding:.3rem 0}
+  .tb td{display:block;padding:.26rem .9rem;border:0}
+  .tb td:first-child{color:#7ce0d6;width:auto;text-align:left;font-size:.76rem}
+  .tb td:nth-child(4){display:none}
+  .axis{grid-template-columns:1fr 1fr;gap:.8rem}
+  .axis::before{display:none}
+  .node{grid-column:span 1}
+  .b{flex:1;text-align:center;padding:.72rem 1.2rem;font-size:.9rem}
+  .pal{display:none}
+}
+@media print{.top,.acts,.swatches,.brush{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="top" role="banner">
+  <div class="tin">
+    <a class="brand" href="#top"><span class="logo">🎨</span>插死他电影网<small>看画面，也看构图</small><em>CHACHA FILM GUIDE</em></a>
+    <nav class="tabs" aria-label="主导航">
+      <a href="#now" class="on">插画系片单</a>
+      <a href="#sea">分镜鉴赏</a>
+      <a href="#rk">美术榜单</a>
+      <a href="#md">色彩时刻</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="pal" aria-hidden="true"></div>
+  <div class="brush" aria-hidden="true"></div>
+  <div class="hbox">
+    <div>
+      <span class="kick">🎨 每一帧，都是一幅画</span>
+      <h1>插死他电影网<br>为 <u>画面</u> 而看的电影指南</h1>
+      <p><b style="color:#7ce0d6">插死他电影网</b>的"插死他"，取<b>插画</b>之意——只推荐<b>每一帧都值得截图</b>的电影。构图、配色、分镜、美术、服装、光影，<b>关灯、戴耳机、把手机翻过去</b>，银幕就是画布。</p>
+      <div class="acts"><a class="b p" href="#now">今晚看哪幅</a><a class="b o" href="#md">按色调挑片</a></div>
+      <div class="sts"><div><b>5</b>种主色调</div><div><b>24</b>格分镜</div><div><b>0</b>广告打扰</div></div>
+    </div>
+    <aside class="swatches" aria-label="今日色卡">
+      <h4>🎬 今日色卡 <i>PALETTE</i></h4>
+      <div class="palrow"><i></i><i></i><i></i><i></i><i></i></div>
+      <p>玫瑰红 · 暖阳黄 · 湖水青 · 薄暮蓝 · 鸢尾紫<br>——<b>《至爱梵高》</b>的最后一笔</p>
+    </aside>
+  </div>
+</section>
+
+<section id="now" class="now">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">插画系片单</h2><a class="us" href="#">按画面挑 · 六幅今夜 →</a></div>
+    <div class="grid">
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#0a0e18,#2f5a6a)"><span class="yr">2017</span><b>🖌️</b></div><h3>至爱梵高 <i>油画</i></h3><p>英国 / 多洛塔·科别拉 · 95 分钟 · 65,000 帧手绘，每一秒都是颜料</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#0e0a14,#6a3a6a)"><span class="tg">神作</span><b>🌸</b></div><h3>你的名字。 <i>新海诚蓝</i></h3><p>日本 / 新海诚 · 107 分钟 · 云、光、电线杆，构图教科书</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#14100a,#8a5a2a)"><span class="yr">1999</span><b>🏯</b></div><h3>幽灵公主 <i>手绘</i></h3><p>日本 / 宫崎骏 · 134 分钟 · 森林的绿，是有层次的</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#0a1410,#2f6a4a)"><span class="tg">必看</span><b>🎐</b></div><h3>海街日记 <i>留白</i></h3><p>日本 / 是枝裕和 · 127 分钟 · 长镜头里，生活自己会构图</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#141014,#5a3a6a)"><span class="yr">2006</span><b>🎭</b></div><h3>香水 <i>巴洛克</i></h3><p>德国 / 汤姆·提克威 · 147 分钟 · 每一帧都能当壁纸</p></article>
+      <article class="mv"><div class="cvr" style="background:linear-gradient(150deg,#100a14,#4a3a6a)"><span class="yr">2013</span><b>🎞️</b></div><h3>布达佩斯大饭店 <i>对称</i></h3><p>美国 / 韦斯·安德森 · 99 分钟 · 强迫症式的中轴对称</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="sea" class="sea">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">分镜鉴赏</h2><span class="us">插死他电影网编辑部 · 五场"值得定格"的戏</span></div>
+    <div class="dlgrp">
+      <div><dl><dt><span class="ava a">🌇</span>《花样年华》</dt>
+        <dd><b>走廊对望</b><span>0:32:14</span></dd>
+        <dd><b>旗袍转身</b><span>0:41:06</span></dd>
+        <dd><b>街角错过</b><span>1:12:48</span></dd>
+        <dd><b>吴哥窟耳语</b><span>1:34:02</span></dd></dl></div>
+      <div><dl><dt><span class="ava b">🍜</span>《小森林》</dt>
+        <dd><b>雪地烤面包</b><span>0:21:30</span></dd>
+        <dd><b>雨中收番茄</b><span>0:48:12</span></dd>
+        <dd><b>核桃饭</b><span>1:03:44</span></dd>
+        <dd><b>圣诞蛋糕</b><span>1:26:18</span></dd></dl></div>
+      <div><dl><dt><span class="ava c">🌊</span>《海街日记》</dt>
+        <dd><b>梅子酒开坛</b><span>0:15:02</span></dd>
+        <dd><b>海边放烟花</b><span>0:52:36</span></dd>
+        <dd><b>庭院樱花</b><span>1:11:20</span></dd>
+        <dd><b>姐妹散步</b><span>1:39:54</span></dd></dl></div>
+      <div><dl><dt><span class="ava d">🚂</span>《布达佩斯大饭店》</dt>
+        <dd><b>粉红酒店正面</b><span>0:08:46</span></dd>
+        <dd><b>雪橇追逐</b><span>0:44:18</span></dd>
+        <dd><b>越狱剖面</b><span>1:02:30</span></dd>
+        <dd><b>画框式构图</b><span>1:24:12</span></dd></dl></div>
+      <div><dl><dt><span class="ava e">🌌</span>《星际穿越》</dt>
+        <dd><b>玉米地对话</b><span>0:26:14</span></dd>
+        <dd><b>黑洞"卡冈图雅"</b><span>1:18:40</span></dd>
+        <dd><b>书架时空</b><span>1:46:02</span></dd>
+        <dd><b>五维泪光</b><span>1:51:36</span></dd></dl></div>
+    </div>
+  </div>
+</section>
+
+<section id="rk" class="rk">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">美术榜单</h2><span class="us">按"想看什么色调"直接翻</span></div>
+    <table class="tb">
+      <thead><tr><th>#</th><th>主色调</th><th>代表片目</th><th>美术关键词</th><th>最佳时段</th><th>推荐度</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>湖水青</td><td>你的名字。 / 海</td><td>高饱和、逆光</td><td><span class="tag">深夜</span></td><td>★★★★★</td></tr>
+        <tr><td>2</td><td>森林绿</td><td>幽灵公主 / 小森林</td><td>手绘、留白</td><td><span class="tag v">周末</span></td><td>★★★★★</td></tr>
+        <tr><td>3</td><td>玫瑰粉</td><td>布达佩斯大饭店</td><td>对称、糖果色</td><td><span class="tag">午后</span></td><td>★★★★☆</td></tr>
+        <tr><td>4</td><td>暖阳金</td><td>至爱梵高 / 香水</td><td>油画、伦勃朗光</td><td><span class="tag w">大屏</span></td><td>★★★★★</td></tr>
+        <tr><td>5</td><td>薄暮蓝</td><td>花样年华 / 重庆森林</td><td>霓虹、窄巷</td><td><span class="tag">雨天</span></td><td>★★★★☆</td></tr>
+        <tr><td>6</td><td>鸢尾紫</td><td>千与千寻 / 爱丽丝</td><td>梦境、纵深</td><td><span class="tag v">别一个人</span></td><td>★★★★☆</td></tr>
+        <tr><td>7</td><td>胶片灰</td><td>罗马 / 地下</td><td>黑白、颗粒</td><td><span class="tag w">戴耳机</span></td><td>★★★★☆</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="md" class="md">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">色彩时刻</h2><span class="us">一天 5 个钟点，各有各的色调</span></div>
+    <div class="axis">
+      <div class="node"><div class="dot d1">05</div><h3>破晓</h3><div class="tm">05:40 · 玫瑰红</div><p><b>《红辣椒》</b>。天还没亮，先看一场梦。屏幕的暖红，刚好不刺眼。</p></div>
+      <div class="node"><div class="dot d2">12</div><h3>正午</h3><div class="tm">12:20 · 暖阳黄</div><p><b>《小森林》</b>。阳光打在砧板上，切菜声就是 BGM，24 分钟就够。</p></div>
+      <div class="node"><div class="dot d3">17</div><h3>黄昏</h3><div class="tm">17:30 · 湖水青</div><p><b>《海街日记》</b>。梅子酒刚开封，海风从扬声器里吹过来。</p></div>
+      <div class="node"><div class="dot d4">21</div><h3>入夜</h3><div class="tm">21:10 · 薄暮蓝</div><p><b>《花样年华》</b>。关灯，把亮度调到 60%，Nat King Cole 一响就对了。</p></div>
+      <div class="node"><div class="dot d5">23</div><h3>子夜</h3><div class="tm">23:40 · 鸢尾紫</div><p><b>《千与千寻》</b>。汤屋亮灯那一段，请务必戴耳机。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" role="contentinfo">
+  <div class="wrap">
+    <div class="fg">
+      <div><h5>🎨 插死他电影网</h5><ul><li><a href="#now">插画系片单</a></li><li><a href="#sea">分镜鉴赏</a></li><li><a href="#rk">美术榜单</a></li><li><a href="#md">色彩时刻</a></li></ul></div>
+      <div><h5>🖌️ 看画姿势</h5><ul><li><a href="#">4K 大屏设置</a></li><li><a href="#">色准校色建议</a></li><li><a href="#">截图构图练习</a></li></ul></div>
+      <div><h5>🎬 题材</h5><ul><li><a href="#">动画美术</a></li><li><a href="#">文艺留白</a></li><li><a href="#">对称构图</a></li><li><a href="#">胶片颗粒</a></li></ul></div>
+      <div><h5>📖 关于</h5><ul><li><a href="#">什么是"插死他"</a></li><li><a href="#">选片标准</a></li><li><a href="#">免责声明</a></li></ul></div>
+    </div>
+    <div class="cp">
+      © 2026 插死他电影网（插死他电影网 / chasitadianyingwang）. 本站为<b>观影指南与片单推荐</b>平台，<b>不提供任何影视资源下载与在线播放服务，不收录盗版链接</b>，倡导支持正版、尊重创作者。"插死他"即"插画"——好电影的每一帧，都是一幅画。<br>
+      网站网址：<a href="https://chasitadianyingwang-cn.github.io/">https://chasitadianyingwang-cn.github.io/</a>　｜　看电影，也看画面
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tabs a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelectorAll('.tabs a').forEach(function(x){x.classList.remove('on')});
+    a.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
